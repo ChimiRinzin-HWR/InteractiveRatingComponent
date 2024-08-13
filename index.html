@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="rating-start" id="rating-start">
+        <!-- Rating state start -->
+        <img src="./images/icon-star.svg" alt="star icon" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ol>
+          <li><div class="rating" id="1" tabindex="0">1</div></li>
+          <li><div class="rating" id="2" tabindex="0">2</div></li>
+          <li><div class="rating" id="3" tabindex="0">3</div></li>
+          <li><div class="rating" id="4" tabindex="0">4</div></li>
+          <li><div class="rating" id="5" tabindex="0">5</div></li>
+        </ol>
+        <div class="button" id="button" tabindex="0">Submit</div>
+      </div>
+      <div class="thanks-start" id="thanks-start">
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+
+        <img src="./images/illustration-thank-you.svg" alt="rated icon" />
+        <p class="rating">
+          You selected <span id="ratinggiven"></span> out of 5
+        </p>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+
+        <!-- Thank you state end -->
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/chimi-rinzin-20178a291/"
+        >Chimi Rinzin</a
+      >.
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
